@@ -33,7 +33,7 @@ services:
     links:
       - app
     volumes:
-      - ${nextcloud}:/var/www/html:ro
+      - ${nginx}:/var/www/html
     depends_on:
       - app
     restart: always
